@@ -1,0 +1,21 @@
+.container-fluid{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron-hr {
+    width: 30%;
+    color: white;
+}
+
+.padding-0{
+    padding: 0;
+}
