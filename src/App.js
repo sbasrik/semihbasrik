@@ -69,9 +69,10 @@ class App extends Component {
   render() {
     return (
         <div className="App">
+
             <MainImage />
             <div className="container-fluid" style={{backgroundColor: "white", paddingTop: "5%"}} >
-                <h2 style={{color: "black", fontSize: "135%"}}>
+                <h2 style={{color: "black", fontSize: "175%"}}>
                     <strong>Here's what I've done so far</strong>
                 </h2>
                 <Past heading={heading1} desc={desc1} location={location1} imgSource={imgSource1}
@@ -92,49 +93,39 @@ class App extends Component {
                       headingLink={headingLink7}/>
             </div>
             <div className="container-fluid" style={{ paddingBottom: "200px", paddingTop: "50px", backgroundColor: "#F5F5F5"}}>
-                <h2 style={{color: "black", fontSize: "140%", marginBottom: "50px"}}>
+                <h2 style={{color: "black", fontSize: "175%"}}>
                     <strong>Let's get in touch</strong>
                 </h2>
-                <div className="row align-middle">
-                    <div className="col-md-2"></div>
-                    <a className="col-md-2"
+                <hr style={{ marginBottom: "50px" }}/>
+                <div className="row align-middle col-md-of">
+                    <div className="col-md-4"></div>
+                    <a className="col-md-1"
                        target="_blank"
                        href="https://www.linkedin.com/in/semih-basr%C4%B1k-315158bb/">
-                        <img style={{width: "150px", height: "150px"}} src={Linkedin_logo}/>
+                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Linkedin_logo}/>
                     </a>
-                    <a className="col-md-2"
+                    <a className="col-md-1"
                        target="_blank"
                        href="https://www.quora.com/profile/Semih-Basr%C4%B1k/">
-                        <img style={{width: "150px", height: "150px"}} src={Quora_logo}/>
+                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Quora_logo}/>
                     </a>
-                    <a className="col-md-2"
+                    <a className="col-md-1"
                        target="_blank"
                        href="http://codeforces.com/profile/sbasrik/">
-                        <img style={{width: "150px", height: "150px"}} src={Codeforces_logo}/>
+                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Codeforces_logo}/>
                     </a>
-                    <a className="col-md-2"
+                    <a className="col-md-1"
                        target="_blank"
                        href="https://www.facebook.com/sbasrik">
-                        <img style={{width: "150px", height: "150px"}} src={Facebook_logo}/>
+                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Facebook_logo}/>
                     </a>
-                    <div className="col-md-2"></div>
+                    <div className="col-md-4"></div>
 
                 </div>
             </div>
         </div>
     );
 
-     /* (
-
-      <div className="App">
-
-        <header className="App-header">
-
-            <mainImage/>
-          <h1 className="App-title">Hey, I'm Semih.</h1>
-        </header>
-      </div>
-    );*/
   }
 }
 

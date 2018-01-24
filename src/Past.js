@@ -11,8 +11,8 @@ const imageStyle = {
 
     position: "relative",
     float: "left",
-    width: "250px",
-    height: "auto",
+    width: "100%",
+    height: "275px",
     backgroundPosition: "50% 50%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -31,7 +31,8 @@ export class Past extends Component{
 
         return(
             <div className="container-fluid" >
-                <div className="row" style={{paddingTop: "5%", paddingLeft:"15%"}}>
+                <hr/>
+                <div className="row" style={{paddingTop: "5%", paddingBottom: "5%", paddingLeft:"15%"}}>
                     <img className="col-sm-4" style={imageStyle} src={this.props.imgSource}/>
                     <div className="col-sm-6" style={{marginLeft:"0", padding: "0"}}>
                         <p
@@ -44,7 +45,7 @@ export class Past extends Component{
                                     {this.props.heading}
                                 </a>
                         </p>
-                        <pg
+                        <p
                             style={{
                                 color: "#548A15",
                                 fontFamily: "arial" ,
@@ -53,7 +54,7 @@ export class Past extends Component{
                             <strong>{this.props.desc}</strong>
                             <br/>
                             <span style={{color:"#373737"}}><strong>{this.props.location}</strong></span>
-                        </pg>
+                        </p>
                     </div>
                 </div>
             </div>

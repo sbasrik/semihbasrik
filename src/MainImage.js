@@ -9,9 +9,7 @@ export class MainImage extends Component{
 
     render() {
         return (
-
-            <div className="container-fluid padding-0"  >
-
+            <div className="jumbotron container-fluid padding-0" >
                 <img src={santaCruz} className="img-fluid" alt="Santa Cruz" />
                 <div className="container centered">
                     <h3 className=""> <em>Hey, I'm</em> </h3>
