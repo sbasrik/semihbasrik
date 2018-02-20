@@ -4,22 +4,19 @@
 
 import React, {Component} from 'react';
 import './Past.css';
-
+import {withGetScreen} from 'react-getscreen'
 
 const imageStyle = {
 
-
     position: "relative",
     float: "left",
-    width: "100%",
-    height: "275px",
-    backgroundPosition: "50% 50%",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    width: "90%",
+    height: "250px",
     padding: "0",
     borderRadius: "35px",
     border: "2px solid rgba(200,200,200,0.75)",
-    marginRight: "20px",
+    marginLeft: "10px",
+    marginRight: "0px",
     marginBottom: "20px"
 };
 
@@ -28,13 +25,13 @@ const imageStyle = {
 export class Past extends Component{
 
     render(){
-
         return(
             <div className="container-fluid" >
                 <hr/>
-                <div className="row" style={{paddingTop: "5%", paddingBottom: "5%", paddingLeft:"15%"}}>
-                    <img className="col-sm-4" style={imageStyle} src={this.props.imgSource}/>
-                    <div className="col-sm-6" style={{marginLeft:"0", padding: "0"}}>
+                <div className="row" style={{paddingTop: "2%", paddingBottom: "2%"}}>
+               /*     <div className="col-sm-2"></div> */
+                    <img className="col-sm-3" style={imageStyle} src={this.props.imgSource} alt="logo"/>
+                    <div className="col-sm-6" style={{marginLeft:"4%", padding: "0"}}>
                         <p
                             style={{
                             color: "#2C6CC5",
@@ -58,7 +55,11 @@ export class Past extends Component{
                     </div>
                 </div>
             </div>
-        )
+
+
+    )
     }
 
 }
+
+export default withGetScreen(Past);

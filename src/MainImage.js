@@ -12,9 +12,8 @@ export class MainImage extends Component{
             <div className="jumbotron container-fluid padding-0" >
                 <img src={santaCruz} className="img-fluid" alt="Santa Cruz" />
                 <div className="container centered">
-                    <h3 className=""> <em>Hey, I'm</em> </h3>
+                    <h1 className="name"><strong>Hey, I'm Semih Basrık</strong></h1>
                     <hr className="jumbotron-hr"/>
-                    <h1 className=""><strong>SEMIH BASRIK</strong></h1>
                 </div>
             </div>
         );

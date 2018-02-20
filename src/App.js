@@ -16,6 +16,7 @@ import Linkedin_logo from './assets/linkedin-logo.jpg';
 import Facebook_logo from './assets/facebook-logo.png';
 import Quora_logo from './assets/quora-logo.jpeg';
 import Codeforces_logo from './assets/codeforces-logo.png';
+import Final_Four_logo from './assets/Final4-istanbul-logo-black.png';
 
 const imgSource1 = IOI2013_logo;
 const heading1 = "The 25th International Olympiad in Informatics";
@@ -65,67 +66,75 @@ const headingLink8 = "https://starleague.us/";
 const desc8 = "USACO Platinum Class Instructor, December 2015";
 const location8 = "Santa Clara, CA, United States";
 
+const imgSource9 = Final_Four_logo;
+const heading9 = "2017 EuroLeague Final Four";
+const headingLink9 = "http://www.euroleague.net/final-four/istanbul-2017";
+const desc9 = "Volunteer, May 2016";
+const location9 = "Istanbul, Turkey";
+
 class App extends Component {
   render() {
-    return (
-        <div className="App">
 
-            <MainImage />
-            <div className="container-fluid" style={{backgroundColor: "white", paddingTop: "5%"}} >
-                <h2 style={{color: "black", fontSize: "175%"}}>
-                    <strong>Here's what I've done so far</strong>
-                </h2>
-                <Past heading={heading1} desc={desc1} location={location1} imgSource={imgSource1}
-                      headingLink={headingLink1}/>
-                <Past heading={heading2} desc={desc2} location={location2} imgSource={imgSource2}
-                      headingLink={headingLink2}/>
-                <Past heading={heading5} desc={desc5} location={location5} imgSource={imgSource5}
-                      headingLink={headingLink5}/>
-                <Past heading={heading3} desc={desc3} location={location3} imgSource={imgSource3}
-                      headingLink={headingLink3}/>
-                <Past heading={heading8} desc={desc8} location={location8} imgSource={imgSource8}
-                      headingLink={headingLink8}/>
-                <Past heading={heading6} desc={desc6} location={location6} imgSource={imgSource6}
-                      headingLink={headingLink6}/>
-                <Past heading={heading4} desc={desc4} location={location4} imgSource={imgSource4}
-                      headingLink={headingLink4}/>
-                <Past heading={heading7} desc={desc7} location={location7} imgSource={imgSource7}
-                      headingLink={headingLink7}/>
-            </div>
-            <div className="container-fluid" style={{ paddingBottom: "200px", paddingTop: "50px", backgroundColor: "#F5F5F5"}}>
-                <h2 style={{color: "black", fontSize: "175%"}}>
-                    <strong>Let's get in touch</strong>
-                </h2>
-                <hr style={{ marginBottom: "50px" }}/>
-                <div className="row align-middle col-md-of">
-                    <div className="col-md-4"></div>
-                    <a className="col-md-1"
-                       target="_blank"
-                       href="https://www.linkedin.com/in/semih-basr%C4%B1k-315158bb/">
-                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Linkedin_logo}/>
-                    </a>
-                    <a className="col-md-1"
-                       target="_blank"
-                       href="https://www.quora.com/profile/Semih-Basr%C4%B1k/">
-                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Quora_logo}/>
-                    </a>
-                    <a className="col-md-1"
-                       target="_blank"
-                       href="http://codeforces.com/profile/sbasrik/">
-                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Codeforces_logo}/>
-                    </a>
-                    <a className="col-md-1"
-                       target="_blank"
-                       href="https://www.facebook.com/sbasrik">
-                        <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Facebook_logo}/>
-                    </a>
-                    <div className="col-md-4"></div>
+      return (
+          <div className="App">
 
-                </div>
-            </div>
-        </div>
-    );
+              <MainImage />
+              <div className="container-fluid" style={{backgroundColor: "white", paddingTop: "5%"}} >
+                  <h2 style={{color: "black", fontSize: "175%"}}>
+                      <strong>Here's what I've done so far</strong>
+                  </h2>
+                  <Past heading={heading1} desc={desc1} location={location1} imgSource={imgSource1}
+                        headingLink={headingLink1}/>
+                  <Past heading={heading2} desc={desc2} location={location2} imgSource={imgSource2}
+                        headingLink={headingLink2}/>
+                  <Past heading={heading5} desc={desc5} location={location5} imgSource={imgSource5}
+                        headingLink={headingLink5}/>
+                  <Past heading={heading3} desc={desc3} location={location3} imgSource={imgSource3}
+                        headingLink={headingLink3}/>
+                  <Past heading={heading8} desc={desc8} location={location8} imgSource={imgSource8}
+                        headingLink={headingLink8}/>
+                  <Past heading={heading9} desc={desc9} location={location9} imgSource={imgSource9}
+                        headingLink={headingLink9}/>
+                  <Past heading={heading6} desc={desc6} location={location6} imgSource={imgSource6}
+                        headingLink={headingLink6}/>
+                  <Past heading={heading4} desc={desc4} location={location4} imgSource={imgSource4}
+                        headingLink={headingLink4}/>
+                  <Past heading={heading7} desc={desc7} location={location7} imgSource={imgSource7}
+                        headingLink={headingLink7}/>
+              </div>
+              <div className="container-fluid" style={{ paddingBottom: "200px", paddingTop: "50px", backgroundColor: "#F5F5F5"}}>
+                  <h2 style={{color: "black", fontSize: "175%"}}>
+                      <strong>Let's get in touch</strong>
+                  </h2>
+                  <hr style={{ marginBottom: "50px" }}/>
+                  <div className="row align-middle col-md-of">
+                      <div className="col-md-4"></div>
+                      <a className="col-md-1"
+                         target="_blank"
+                         href="https://www.linkedin.com/in/semih-basr%C4%B1k-315158bb/">
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Linkedin_logo}/>
+                      </a>
+                      <a className="col-md-1"
+                         target="_blank"
+                         href="https://www.quora.com/profile/Semih-Basr%C4%B1k/">
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Quora_logo}/>
+                      </a>
+                      <a className="col-md-1"
+                         target="_blank"
+                         href="http://codeforces.com/profile/sbasrik/">
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Codeforces_logo}/>
+                      </a>
+                      <a className="col-md-1"
+                         target="_blank"
+                         href="https://www.facebook.com/sbasrik">
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Facebook_logo}/>
+                      </a>
+                      <div className="col-md-4"></div>
 
+                  </div>
+              </div>
+          </div>
+      );
   }
 }
 
