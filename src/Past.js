@@ -26,10 +26,10 @@ export class Past extends Component{
 
     render(){
         return(
-            <div className="container-fluid" >
+            <div className="container-fluid"  >
                 <hr/>
                 <div className="row" style={{paddingTop: "2%", paddingBottom: "2%"}}>
-               /*     <div className="col-sm-2"></div> */
+                   <div className="col-sm-2"></div>
                     <img className="col-sm-3" style={imageStyle} src={this.props.imgSource} alt="logo"/>
                     <div className="col-sm-6" style={{marginLeft:"4%", padding: "0"}}>
                         <p
@@ -55,11 +55,8 @@ export class Past extends Component{
                     </div>
                 </div>
             </div>
-
-
-    )
+        )
     }
-
 }
 
 export default withGetScreen(Past);
