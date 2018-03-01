@@ -11,7 +11,7 @@ import Ynot_logo from './assets/Ynot-logo.png';
 import Uwaterloo_logo from './assets/Uwaterloo_logo.jpg';
 import Boun_logo from './assets/Boun_logo.jpg';
 import Mentalist_logo from './assets/Mentalist-logo.jpeg';
-import Starleague_logo from './assets/Starleague-logo.jpg';
+import iel_logo from './assets/iel-logo.jpg';
 import Linkedin_logo from './assets/linkedin-logo.jpg';
 import Facebook_logo from './assets/facebook-logo.png';
 import Quora_logo from './assets/quora-logo.jpeg';
@@ -20,19 +20,19 @@ import Final_Four_logo from './assets/Final4-istanbul-logo-black.png';
 
 const imgSource1 = IOI2013_logo;
 const heading1 = "The 25th International Olympiad in Informatics";
-const headingLink1 = "http://www.ioinformatics.org/locations/ioi13/";
+const headingLink1 = "http://stats.ioinformatics.org/people/3004";
 const desc1 = "Won Silver Medal, July 2013";
 const location1 = "Brisbane, Australia";
 
 const imgSource2 = IOI2014_logo;
 const heading2 = "The 26th International Olympiad in Informatics";
-const headingLink2 = "http://www.ioinformatics.org/locations/ioi14/";
+const headingLink2 = "http://stats.ioinformatics.org/people/3004";
 const desc2 = "Won Silver Medal, July 2014";
 const location2 = "Taipei, Taiwan";
 
 const imgSource3 = YHack_logo;
 const heading3 = "YHack 2015";
-const headingLink3 = "https://yhack2015.devpost.com/";
+const headingLink3 = "https://devpost.com/software/public-canvas";
 const desc3 = "Developed 4K Public Canvas, November 2015";
 const location3 = "Yale University, New Haven, CT, United States";
 
@@ -60,11 +60,11 @@ const headingLink7 = "https://www.linkedin.com/company/mentalist-event-&-marketi
 const desc7 = "Digital Marketing Intern, Summer 2017";
 const location7 = "Istanbul, Turkey";
 
-const imgSource8 = Starleague_logo;
-const heading8 = "Star League";
-const headingLink8 = "https://starleague.us/";
-const desc8 = "USACO Platinum Class Instructor, December 2015";
-const location8 = "Santa Clara, CA, United States";
+const imgSource8 = iel_logo;
+const heading8 = "Istanbul High School";
+const headingLink8 = "https://www.ielev.org.tr/tr/istanbul-erkek-lisesi/";
+const desc8 = "Internation Olympiad in Informatics(IOI) Coach, December 2015";
+const location8 = "Istanbul, Turkey";
 
 const imgSource9 = Final_Four_logo;
 const heading9 = "2017 EuroLeague Final Four";
@@ -83,6 +83,7 @@ class App extends Component {
                   <h2 style={{color: "black", fontSize: "175%"}}>
                       <strong>Here's what I've done so far</strong>
                   </h2>
+                  <hr/>
                   <Past heading={heading1} desc={desc1} location={location1} imgSource={imgSource1}
                         headingLink={headingLink1}/>
                   <Past heading={heading2} desc={desc2} location={location2} imgSource={imgSource2}
@@ -102,32 +103,33 @@ class App extends Component {
                   <Past heading={heading7} desc={desc7} location={location7} imgSource={imgSource7}
                         headingLink={headingLink7}/>
               </div>
-              <div className="container-fluid" style={{ paddingBottom: "200px", paddingTop: "50px", backgroundColor: "#F5F5F5"}}>
+
+              <div className="accounts container-fluid" style={{ paddingBottom: "200px", paddingTop: "50px", backgroundColor: "#F5F5F5"}}>
                   <h2 style={{color: "black", fontSize: "175%"}}>
                       <strong>Let's get in touch</strong>
                   </h2>
                   <hr style={{ marginBottom: "50px" }}/>
-                  <div className="row align-middle col-md-of">
+                  <div className="row align-middle col-md-of" style={{ marginTop: "50px" }}>
                       <div className="col-md-4"></div>
                       <a className="col-md-1"
                          target="_blank"
                          href="https://www.linkedin.com/in/semih-basr%C4%B1k-315158bb/">
-                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Linkedin_logo}/>
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem" , marginTop: "1rem"}} src={Linkedin_logo}/>
                       </a>
                       <a className="col-md-1"
                          target="_blank"
                          href="https://www.quora.com/profile/Semih-Basr%C4%B1k/">
-                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Quora_logo}/>
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem" , marginTop: "1rem"}} src={Quora_logo}/>
                       </a>
                       <a className="col-md-1"
                          target="_blank"
                          href="http://codeforces.com/profile/sbasrik/">
-                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Codeforces_logo}/>
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem" , marginTop: "1rem"}} src={Codeforces_logo}/>
                       </a>
                       <a className="col-md-1"
                          target="_blank"
                          href="https://www.facebook.com/sbasrik">
-                          <img style={{width: "110px", height: "110px", marginBottom: "1rem"}} src={Facebook_logo}/>
+                          <img style={{width: "110px", height: "110px", marginBottom: "1rem" , marginTop: "1rem"}} src={Facebook_logo}/>
                       </a>
                       <div className="col-md-4"></div>
 

@@ -26,9 +26,8 @@ export class Past extends Component{
 
     render(){
         return(
-            <div className="container-fluid"  >
-                <hr/>
-                <div className="row" style={{paddingTop: "2%", paddingBottom: "2%"}}>
+            <div  >
+                <div className="row content" style={{paddingTop: "2%", paddingBottom: "2%"}}>
                    <div className="col-sm-2"></div>
                     <img className="col-sm-3" style={imageStyle} src={this.props.imgSource} alt="logo"/>
                     <div className="col-sm-6" style={{marginLeft:"4%", padding: "0"}}>
